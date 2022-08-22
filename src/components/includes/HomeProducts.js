@@ -13,15 +13,15 @@ export default function HomeProducts(props) {
           </div>
         </div>
       </div>
-      <div className="row mt-5 px-2">
+      <div className="row mt-5 px-2 card-row">
         {props.products.map((product, index) => (
           <div
             key={product.id}
-            className="col-xxl-3 col-xl-4  col-md-6 col-sm-12 mb-5 card-products"
+            className="col-xxl-3 col-xl-4  col-md-6 col-sm-6 mb-5 card-products"
           >
             <div
-              class="card"
-              style={{ width: '18rem', borderColor: 'green', height: '373px' }}
+              className="card"
+              style={{ width: '100%', borderColor: 'green', height: '430px' }}
             >
               <img src={product.cover_photo} class="card-img-top" alt="" />
               <div class="card-body text-center">

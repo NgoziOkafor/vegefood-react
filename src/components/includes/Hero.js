@@ -17,7 +17,11 @@ export default function Hero() {
                     WE SERVE FRESH VEGETABLES AND FRUITS
                   </h1>
                   <p>WE DELIVER ORGANIC VEGETABLES AND FRUITS</p>
-                  <button type="button" class="btn btn-success">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    style={{ cursor: 'pointer' }}
+                  >
                     View Details
                   </button>
                 </div>
@@ -29,7 +33,11 @@ export default function Hero() {
                     100% FRESH AND ORGANIC FOODS
                   </h1>
                   <p>WE DELIVER ORGANIC VEGETABLES AND FRUITS</p>
-                  <button type="button" class="btn btn-success">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    style={{ cursor: 'pointer' }}
+                  >
                     View Details
                   </button>
                 </div>

@@ -73,10 +73,43 @@ export default function Header() {
                   ABOUT
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/">
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle active"
+                  to="/"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   CONTACT
                 </Link>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="/">
+                      Registration
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/">
+                      Profile
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/">
+                      Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/">
+                      Logout
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/">
+                      Checkout
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to="/">

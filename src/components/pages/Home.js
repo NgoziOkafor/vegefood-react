@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { newProducts } from '../../utils/Database';
 import CategoryProducts from '../includes/CategoryProducts';
+import Footer from '../includes/Footer';
 import Header from '../includes/Header';
 import Hero from '../includes/Hero';
 import HomeProducts from '../includes/HomeProducts';
 import Navbar from '../includes/Navbar';
+import Partner from '../includes/Partner';
 import SubHero from '../includes/SubHero';
 import Testimonial from '../Testimonial';
 
@@ -19,6 +21,8 @@ export default function Home() {
       <CategoryProducts />
       <HomeProducts products={newests} />
       <Testimonial />
+      <Partner />
+      <Footer />
     </div>
   );
 }
