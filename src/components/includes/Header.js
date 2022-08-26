@@ -1,6 +1,16 @@
+import { useEffect, useState } from 'react';
+import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 
-export default function Header() {
+export default function Header(output) {
+  const [cookies, setCookies] = useCookies(['cart']);
+  const [cart, setCart] = useState(output.cart);
+
+  useEffect(() => {
+    if (output.cart) {
+      setCart(output.cart);
+    }
+  }, []);
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -85,7 +95,7 @@ export default function Header() {
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="/">
+                    <Link className="dropdown-item" to="/register">
                       Registration
                     </Link>
                   </li>
@@ -112,9 +122,9 @@ export default function Header() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <span>[0]</span>
+                <Link className="nav-link active" to="/cart">
+                  <i className="fa-solid fa-cart-shopping"></i>
+                  <span>{cart ? cart.length : '0'}</span>
                 </Link>
               </li>
             </ul>

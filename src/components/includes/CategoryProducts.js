@@ -35,7 +35,7 @@ export default function CategoryProducts() {
               <p style={{ fontSize: '20px' }}>
                 Protect the health of every home
               </p>
-              <button type="button" class="btn btn-success">
+              <button type="button" className="btn btn-success">
                 Shop Now
               </button>
             </div>

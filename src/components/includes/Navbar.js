@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg d-none d-sm-block bg-success">
         <div className="container-fluid">
           <Link className="navbar-brand text-white" to="/">
-            <i class="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-phone"></i>
             <span className="navbar-span">+435603423191</span>
           </Link>
           <button
@@ -24,7 +24,7 @@ export default function Navbar() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
-                  <i class="fa-solid fa-paper-plane text-white"></i>
+                  <i className="fa-solid fa-paper-plane text-white"></i>
                 </Link>
               </li>
               <li className="nav-item">

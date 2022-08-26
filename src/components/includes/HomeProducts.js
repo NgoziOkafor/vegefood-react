@@ -1,7 +1,14 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useCookies } from 'react-cookie';
+
+// import { Link } from 'react-router-dom';
+// import { products } from '../../utils/Database';
 
 export default function HomeProducts(props) {
-  console.log(props);
+  const [cookies, setCookies] = useCookies(['cart']);
+  let [cart, setCart] = useState(cookies.cart);
+  const handleCookies = props.handleCookies;
+
   return (
     <div className="container mt-5">
       <div className="row">
@@ -23,17 +30,21 @@ export default function HomeProducts(props) {
               className="card"
               style={{ width: '100%', borderColor: 'green', height: '430px' }}
             >
-              <img src={product.cover_photo} class="card-img-top" alt="" />
-              <div class="card-body text-center">
-                <h5 class="card-title text-success">{product.name}</h5>
+              <img src={product.cover_photo} className="card-img-top" alt="" />
+              <div className="card-body text-center">
+                <h5 className="card-title text-success">{product.name}</h5>
                 <p className="text-success" style={{ fontWeight: 'bold' }}>
                   {product.price}
                 </p>
-                <Link to="/" class="btn btn-success mt-2 view-btn">
-                  View
-                </Link>
+                <button
+                  className="btn btn-success mt-2 view-btn"
+                  onClick={handleCookies}
+                  product-id={product.id}
+                >
+                  AddToCart
+                </button>
                 <p className="text-success d-inline-flex ms-2 view-btn">
-                  {product.quantity}
+                  {product.weight}
                 </p>
               </div>
             </div>

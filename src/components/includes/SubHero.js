@@ -5,7 +5,7 @@ export default function SubHero() {
         <div className="row px-5">
           <div className="col-lg-3 col-md-6 mt-5">
             <i
-              class="fa-solid fa-2x fa-truck-fast rounded-circle offset-3 text-white"
+              className="fa-solid fa-2x fa-truck-fast rounded-circle offset-3 text-white"
               style={{
                 height: '100px',
                 width: '100px',
@@ -19,7 +19,7 @@ export default function SubHero() {
           </div>
           <div className="col-lg-3 col-md-6 mt-5">
             <i
-              class="fa-solid fa-2x fa-apple-whole rounded-circle offset-3 text-white"
+              className="fa-solid fa-2x fa-apple-whole rounded-circle offset-3 text-white"
               style={{
                 height: '100px',
                 width: '100px',

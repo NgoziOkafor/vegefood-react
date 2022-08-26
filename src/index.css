@@ -165,13 +165,47 @@ code {
 .envelope-icon {
   margin-top: 4px;
 }
-.question-footer {
+.cart-pix {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+thead {
+  font-size: 25px;
+  background-color: rgb(75, 136, 75);
+  height: 80px;
+  width: 100%;
+  color: white;
+}
+.cart-product-one {
+  height: 230px;
+}
+.product-name {
+  font-size: 25px;
+}
+.product-price {
+  font-size: 25px;
+}
+.product-total {
+  font-size: 25px;
+}
+td {
+  vertical-align: middle;
+}
+th {
+  vertical-align: middle;
 }
 @media (max-width: 1224px) {
   .carousel-item {
     height: 600px;
     width: 100%;
   }
+}
+.shopping-cart-text {
+  font-weight: bolder;
 }
 /* @media (max-width: 1198px) {
   .card-products {
